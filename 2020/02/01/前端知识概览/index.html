@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="FE skills needed❗ ❗ ❗ 浏览器  浏览器内核渲染原理  HTML解析器  CSS解析器  JS引擎  渲染流程   12345678910111213141516171819- 浏览器调试	- Tools: F12、浏览器插件	- Content: 			- 元素：结构、属性		- 样式     			- 脚本：日志、断点、事件、变量监听、调用堆栈		- 性能：耗时（目前常用）">
+<meta name="description" content="FE skills needed❗ ❗ ❗ 浏览器  浏览器内核渲染原理  HTML解析器  CSS解析器  JS引擎  渲染流程  加载 解析 构建DOM树 绘制 回流 重绘   浏览器调试  Tools: F12、浏览器插件  Content:   元素：结构、属性 样式 脚本：日志、断点、事件、变量监听、调用堆栈   性能：耗时（目前常用） ❗网络请求：模拟请求、审查网络（点击请求能看见很多">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端知识概览">
 <meta property="og:url" content="http://yoursite.com/2020/02/01/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%A6%82%E8%A7%88/index.html">
 <meta property="og:site_name" content="Shimmeryliving&#39;s Blog">
-<meta property="og:description" content="FE skills needed❗ ❗ ❗ 浏览器  浏览器内核渲染原理  HTML解析器  CSS解析器  JS引擎  渲染流程   12345678910111213141516171819- 浏览器调试	- Tools: F12、浏览器插件	- Content: 			- 元素：结构、属性		- 样式     			- 脚本：日志、断点、事件、变量监听、调用堆栈		- 性能：耗时（目前常用）">
+<meta property="og:description" content="FE skills needed❗ ❗ ❗ 浏览器  浏览器内核渲染原理  HTML解析器  CSS解析器  JS引擎  渲染流程  加载 解析 构建DOM树 绘制 回流 重绘   浏览器调试  Tools: F12、浏览器插件  Content:   元素：结构、属性 样式 脚本：日志、断点、事件、变量监听、调用堆栈   性能：耗时（目前常用） ❗网络请求：模拟请求、审查网络（点击请求能看见很多">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-01T07:05:37.000Z">
-<meta property="article:modified_time" content="2020-02-01T08:28:31.336Z">
+<meta property="article:modified_time" content="2020-02-01T08:35:18.955Z">
 <meta property="article:author" content="Shimmeryliving">
 <meta name="twitter:card" content="summary">
 
@@ -373,16 +373,47 @@
 <li><p>JS引擎</p>
 </li>
 <li><p>渲染流程</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">- 浏览器调试</span><br><span class="line"></span><br><span class="line">	- Tools: F12、浏览器插件</span><br><span class="line">	- Content: </span><br><span class="line">	</span><br><span class="line">		- 元素：结构、属性</span><br><span class="line">		- 样式</span><br><span class="line">     			- 脚本：日志、断点、事件、变量监听、调用堆栈</span><br><span class="line">		- 性能：耗时（目前常用）</span><br><span class="line">		- ❗网络请求：模拟请求、审查网络（点击请求能看见很多内容）、模拟网络环境				</span><br><span class="line">		- 内存</span><br><span class="line">		- 本地存储信息：cookie、localStorage、cache</span><br><span class="line">-  浏览器事件：</span><br><span class="line">	常见事件（鼠标事件、键盘事件 .etc）、事件处理、添加、移除</span><br><span class="line">-  浏览器任务调度机制</span><br><span class="line">-  浏览器兼容性（疯狂踩坑）</span><br><span class="line"></span><br><span class="line">	填坑ing</span><br><span class="line">-  最近常见问题汇总：</span><br></pre></td></tr></table></figure>
-<p>  #2020.01.04-2020.02.01:<br>  请求跨域、OPTIONS、身份验证、超大数据量加载慢```</p>
-<pre><code>
-</code></pre></li>
+<ul>
+<li>加载</li>
+<li>解析</li>
+<li>构建DOM树</li>
+<li>绘制</li>
+<li>回流</li>
+<li>重绘</li>
+</ul>
+</li>
+<li><p>浏览器调试</p>
+<ul>
+<li><p>Tools: F12、浏览器插件</p>
+</li>
+<li><p>Content: </p>
+<ul>
+<li>元素：结构、属性</li>
+<li>样式<ul>
+<li>脚本：日志、断点、事件、变量监听、调用堆栈</li>
+</ul>
+</li>
+<li>性能：耗时（目前常用）</li>
+<li>❗网络请求：模拟请求、审查网络（点击请求能看见很多内容）、模拟网络环境</li>
+<li>内存</li>
+<li>本地存储信息：cookie、localStorage、cache</li>
 </ul>
 </li>
 </ul>
 </li>
+<li><p>浏览器事件：<br> 常见事件（鼠标事件、键盘事件 .etc）、事件处理、添加、移除</p>
+</li>
+<li><p>浏览器任务调度机制</p>
+</li>
+<li><p>浏览器兼容性（疯狂踩坑）</p>
+</li>
+<li><p>最近常见问题汇总：</p>
+<p> 2020.01.04-2020.02.01:<br> 请求跨域、OPTIONS、身份验证、超大数据量加载慢</p>
+</li>
 </ul>
-<pre><code>​    </code></pre><ul>
+</li>
+</ul>
+</li>
 <li><p>HTML</p>
 <ul>
 <li>语义和语法：<ul>
